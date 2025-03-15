@@ -51,6 +51,7 @@ namespace AdvPlatformsService.Helpers
                 }
             }
 
+            System.Console.WriteLine(string.Join(' ', names));
             return names;
         }
     }

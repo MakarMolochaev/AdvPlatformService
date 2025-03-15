@@ -20,14 +20,29 @@ namespace AdvPlatformsService.Controller
 
         public static async Task<IResult> GetPlatforms([FromRoute] string url, IPlatformsService platformsService)
         {
-            var platforms = await platformsService.GetPlatforms(url);
-            return Results.Ok(platforms);
+            var result = await platformsService.GetPlatforms(url);
+            if(!result.IsSuccess)
+            {
+                return Results.BadRequest(result.ErrorMessage);
+            }
+            else
+            {
+                return Results.Ok(result.Result);
+            }
         }
 
         public static async Task<IResult> LoadPlatforms([FromBody] List<PlatformRequest> platforms, IPlatformsService platformsService)
         {
-            await platformsService.LoadPlatforms(platforms);
-            return Results.Ok();
+            var result = await platformsService.LoadPlatforms(platforms);
+            
+            if(!result.IsSuccess)
+            {
+                return Results.BadRequest(result.ErrorMessage);
+            }
+            else
+            {
+                return Results.Ok(result.Result);
+            }
         }
     }
 }

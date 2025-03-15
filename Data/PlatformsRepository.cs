@@ -29,8 +29,6 @@ namespace AdvPlatformsService.Data
             
             await dbContext.Platforms.AddRangeAsync(platforms);
             await dbContext.SaveChangesAsync();
-
-            System.Console.WriteLine(dbContext.Platforms.Count());
         }
     }
 }

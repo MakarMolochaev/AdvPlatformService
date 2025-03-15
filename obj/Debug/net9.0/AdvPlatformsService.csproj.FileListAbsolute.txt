@@ -37,3 +37,4 @@ F:\VSCode\AdvPlatformsService\obj\Debug\net9.0\refint\AdvPlatformsService.dll
 F:\VSCode\AdvPlatformsService\obj\Debug\net9.0\AdvPlatformsService.pdb
 F:\VSCode\AdvPlatformsService\obj\Debug\net9.0\AdvPlatformsService.genruntimeconfig.cache
 F:\VSCode\AdvPlatformsService\obj\Debug\net9.0\ref\AdvPlatformsService.dll
+F:\VSCode\AdvPlatformsService\obj\Debug\net9.0\AdvPlatformsService.sourcelink.json

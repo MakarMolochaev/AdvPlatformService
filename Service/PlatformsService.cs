@@ -63,7 +63,7 @@ namespace AdvPlatformsService.Service
 
             await platformsRepository.SetPlatforms(platformCollections);
 
-            return new ServiceResult<string>(IsSuccess: true, Result: "Platforms are loaded.")
+            return new ServiceResult<string>(IsSuccess: true, Result: "Platforms are loaded.");
         }
     }
 }
